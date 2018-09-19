@@ -1,0 +1,15 @@
+type: "MultiLineString"
+coordinates:
+  !!python/tuple
+  - !!python/tuple
+    - !!python/tuple [-73.96943, 40.78519]
+    - !!python/tuple [-73.96082, 40.78095]
+  - !!python/tuple
+    - !!python/tuple [-73.96415, 40.79229]
+    - !!python/tuple [-73.95544, 40.78854]
+  - !!python/tuple
+    - !!python/tuple [-73.97162, 40.78205]
+    - !!python/tuple [-73.96374, 40.77715]
+  - !!python/tuple
+    - !!python/tuple [-73.97880, 40.77247]
+    - !!python/tuple [-73.97036, 40.76811]

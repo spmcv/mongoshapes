@@ -1,0 +1,8 @@
+type: "Polygon"
+coordinates:
+  !!python/tuple
+  - !!python/tuple
+    - !!python/tuple [0.0, 0.0]
+    - !!python/tuple [3.0, 6.0]
+    - !!python/tuple [6.0, 1.0]
+    - !!python/tuple [0.0, 0.0]

@@ -1,0 +1,17 @@
+type: "MultiPolygon"
+coordinates:
+  # polygon
+  - !!python/tuple
+    - !!python/tuple
+      - !!python/tuple [-73.958, 40.8003]
+      - !!python/tuple [-73.9498, 40.7968]
+      - !!python/tuple [-73.9737, 40.7648]
+      - !!python/tuple [-73.9814, 40.7681]
+      - !!python/tuple [-73.958, 40.8003]
+  # polygon
+  - !!python/tuple
+    - !!python/tuple
+      - !!python/tuple [-73.958, 40.8003]
+      - !!python/tuple [-73.9498, 40.7968]
+      - !!python/tuple [-73.9737, 40.7648]
+      - !!python/tuple [-73.958, 40.8003]
