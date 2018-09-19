@@ -1,5 +1,8 @@
 # MongoShapes
 
+[![Build Status](https://travis-ci.org/phuntimes/mongoshapes.svg?branch=master)](https://travis-ci.org/phuntimes/mongoshapes)
+[![Coverage Status](https://coveralls.io/repos/github/phuntimes/mongoshapes/badge.svg?branch=master)](https://coveralls.io/github/phuntimes/mongoshapes?branch=master)
+
 
 This project is a complete replacement of the GeoJSON field functionality of [MongoEngine] which exploits the
 [__geo_interface__] protocol to handle BSON serialization and deserialization from MongoDB. This is accomplished by 

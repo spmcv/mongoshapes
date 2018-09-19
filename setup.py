@@ -42,9 +42,9 @@ setup(
     url='https://github.com/phuntimes/mongoshapes',
     license='MIT License',
     author='Sean McVeigh',
-    author_email='smcveigh@gmail.com',
+    author_email='spmcveigh@gmail.com',
     description='Shapely integration for MongoEngine',
     install_requires=install_requirements,
     setup_requires=setup_requirements,
-
+    classifiers=classifiers
 )
