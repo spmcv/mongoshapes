@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from .dict import GeoDict as GeometryCollectionDict
+from .dict import GeometryCollectionDict
 from .type import GeometryCollection, GeometryCollectionType

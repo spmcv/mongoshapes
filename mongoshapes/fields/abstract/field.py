@@ -33,7 +33,7 @@ class ShapelyField(me.fields.BaseField, abc.ABC):
 
     @property
     @abc.abstractmethod
-    def shape(self) -> AnyGeoType:
+    def shape(self) -> AnyGeometryType:
         pass
 
     def __init__(self, auto_index: bool=True, *args, **kwargs):
@@ -44,7 +44,7 @@ class ShapelyField(me.fields.BaseField, abc.ABC):
             self._geo_index = False
         super(ShapelyField, self).__init__(*args, **kwargs)
 
-    def validate(self, value: AnyGeo):
+    def validate(self, value: AnyGeometry):
         """
         Validate the internal Shapely geometry.
 
@@ -58,7 +58,7 @@ class ShapelyField(me.fields.BaseField, abc.ABC):
         if not value.is_valid:
             self.error("Value is not a valid {:s}".format(n))
 
-    def to_python(self, value: AnyGeoDict) -> AnyGeo:
+    def to_python(self, value: AnyGeometryDict) -> AnyGeometry:
         """
         Utilize `__geo_interface__`__ protocol to deserialized from BSON.
 
@@ -69,7 +69,7 @@ class ShapelyField(me.fields.BaseField, abc.ABC):
         """
         return shape(value)
 
-    def to_mongo(self, value: AnyGeo) -> AnyGeoDict:
+    def to_mongo(self, value: AnyGeometry) -> AnyGeometryDict:
         """
         Utilize `__geo_interface__`__ protocol to serialize to BSON.
 

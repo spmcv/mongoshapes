@@ -12,7 +12,7 @@ from shapely.geometry import MultiPolygon
 from shapely.geometry import GeometryCollection
 
 
-AnyGeo = Union[
+AnyGeometry = Union[
     Point,
     LineString,
     Polygon,
@@ -22,4 +22,4 @@ AnyGeo = Union[
     GeometryCollection
 ]
 
-AnyGeoType = Type[AnyGeo]
+AnyGeometryType = Type[AnyGeometry]

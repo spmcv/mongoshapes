@@ -11,7 +11,8 @@ packages = find_packages(
 install_requirements = [
     'pymongo>=3.7.1',
     'mongoengine>=0.15.3',
-    'shapely>=1.6.4'
+    'shapely>=1.6.4',
+    'pyproj'
 ]
 
 setup_requirements = [

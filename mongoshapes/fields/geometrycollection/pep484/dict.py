@@ -1,12 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from typing import Union
-from typing import Dict
-from typing import Sequence as Seq
+from typing import Union, Sequence, Dict
 
-from mongoshapes.fields.abstract import AnyGeoDict
 
-Geometries = Seq[AnyGeoDict]
-StrOrGeo = Union[str, Geometries]
-GeoDict = Dict[str, StrOrGeo]
+from mongoshapes.fields.abstract import AnyGeometryDict
+
+GeometryCollectionGeometry = Sequence[AnyGeometryDict]
+GeometryCollectionValues = Union[str, GeometryCollectionGeometry]
+GeometryCollectionDict = Dict[str, GeometryCollectionValues]

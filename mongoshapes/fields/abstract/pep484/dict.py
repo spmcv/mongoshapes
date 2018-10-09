@@ -1,18 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from typing import Union
-from typing import Sequence as Seq
-from typing import Dict
+from typing import Union, Sequence, Dict
 
 
-Any = Union[
+AnyGeometryGeometry = Union[
     # Note Point
-    Seq[float],
-    Seq[Seq[float]],  # LineString, MultiPoint
-    Seq[Seq[Seq[float]]],  # MultiLineString, Polygon
-    Seq[Seq[Seq[Seq[float]]]]  # MultiPolygon
+    Sequence[float],
+    Sequence[Sequence[float]],  # LineString, MultiPoint
+    Sequence[Sequence[Sequence[float]]],  # MultiLineString, Polygon
+    Sequence[Sequence[Sequence[Sequence[float]]]]  # MultiPolygon
 ]
 
-StrOrAny = Union[str, Any]
-GeoDict = Dict[str, StrOrAny]
+AnyGeometryValues = Union[str, AnyGeometryGeometry]
+AnyGeometryDict = Dict[str, AnyGeometryValues]

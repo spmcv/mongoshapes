@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from typing import Union
-from typing import Dict
-from typing import Sequence as Seq
+from typing import Union, Sequence, Dict
 
-Geometry = Seq[float]
-StrOrGeo = Union[str, Geometry]
-GeoDict = Dict[str, StrOrGeo]
+
+PointGeometry = Sequence[float]
+PointValues = Union[str, PointGeometry]
+PointDict = Dict[str, PointValues]

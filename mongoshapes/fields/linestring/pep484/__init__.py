@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from .dict import GeoDict as LineStringDict
+from .dict import LineStringDict
 from .type import LineString, LineStringType
